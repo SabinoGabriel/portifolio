@@ -13,14 +13,18 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: 'Nome do App',
-    description: 'Descrição do App',
-    applicationName: 'Nome do App',
-    authors: [{ url: 'https://seedabit.org.br', name: 'Seed a Bit' }],
-    keywords: ['palavra-chave', 'palavra-chave'],
-    creator: 'Seed a Bit',
-    publisher: 'Seed a Bit',
-    abstract: 'Descrição do App',
+    title: 'Meu Portifólio',
+    description: 'Portfólio de Gabriel Sabino Leite, Analista de Projetos na Seed a Bit Tecnologia e graduando em Sistemas de Informação pela UFRPE. Experiência em desenvolvimento front-end, design de sistemas, gestão de projetos e metodologias ágeis (Scrum).',
+    applicationName: 'Portfólio Gabriel Sabino Leite',
+    authors: [{ url: 'https://www.linkedin.com/in/gabriel-sabino-leite-198a04100/', name: 'Gabriel Sabino Leite' }],
+    keywords: [
+        'Gabriel Sabino Leite', 'Portfólio', 'Seed a Bit', 'React.js', 'Next.js', 'React Native',
+        'HTML5', 'CSS', 'JavaScript', 'Python', 'Pandas', 'NumPy', 'Matplotlib',
+        'Scrum', 'Trabalho em equipe', 'Comunicação', 'Git', 'GitHub', 'Visual Studio Code', 'Figma',
+        'Gamificação', 'Design de sistemas', 'Apresentações', 'Inglês'],
+    creator: 'Gabriel Sabino Leite',
+    publisher: 'Gabriel Sabino Leite',
+    abstract: 'Portfólio profissional de Gabriel Sabino Leite, com projetos, experiências, habilidades e certificados em tecnologia e gestão de projetos.',
 }
 
 export default function RootLayout({
