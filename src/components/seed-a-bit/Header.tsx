@@ -9,7 +9,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-md">
         <div className="flex justify-between items-center h-[88px] px-[10%]">
         {/* Logo / Nome */}
         <div>
@@ -29,18 +29,18 @@ const Header = () => {
         <div className="md:hidden flex items-center gap-4">
           <ThemeToggle />
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} className="text-gray-900 dark:text-white" /> : <Menu size={24} className="text-gray-900 dark:text-white" />}
           </button>
         </div>
       </div>
 
       {/* Menu Mobile (Aparece quando o botão é clicado) */}
       {isOpen && (
-        <div className="md:hidden py-4 absolute w-full bg-white/95 dark:bg-gray-900/95">
+        <div className="md:hidden py-4 absolute w-full bg-white dark:bg-black">
           <nav className="flex flex-col items-center space-y-4">
-            <Link href="#sobre-mim" onClick={() => setIsOpen(false)}>Sobre mim</Link>
-            <Link href="#projetos" onClick={() => setIsOpen(false)}>Projetos</Link>
-            <Link href="#contato" onClick={() => setIsOpen(false)}>Contato</Link>
+            <Link href="#sobre-mim" className="text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-400 transition-colors" onClick={() => setIsOpen(false)}>Sobre mim</Link>
+            <Link href="#projetos" className="text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-400 transition-colors" onClick={() => setIsOpen(false)}>Projetos</Link>
+            <Link href="#contato" className="text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-400 transition-colors" onClick={() => setIsOpen(false)}>Contato</Link>
           </nav>
         </div>
       )}

@@ -14,7 +14,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
-      <footer className='py-8 text-center text-gray-500 dark:text-gray-400'>
+      <footer className='py-8 text-center text-gray-500 dark:text-gray-400 bg-white dark:bg-black'>
         <p className='text-sm'>© 2025 <a className='underline' href='https://seedabit.org.br' target='_blank' rel='noopener noreferrer'>Seed a Bit</a>. All rights reserved.</p>
       </footer>
     </div>
