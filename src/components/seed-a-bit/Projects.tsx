@@ -51,10 +51,9 @@ const ProjectCard = ({ title, description, projectUrl }: ProjectProps) => (
 const Projects = () => {
   return (
     <section id="projetos" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto">
+      <div>
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">PROJETOS</h2>
-        {/* A mágica da responsividade acontece aqui */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* <-- 1 coluna no mobile, 2 no tablet, 3 no desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
