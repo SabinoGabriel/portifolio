@@ -7,7 +7,7 @@ import Contact from '@/components/seed-a-bit/Contacts';
 
 export default function Home() {
   return (
-    <div className="px-[10%]">
+    <div className="px-[10%] bg-white dark:bg-black min-h-screen transition-colors duration-300">
       <Header />
       <main>
         <Hero />
