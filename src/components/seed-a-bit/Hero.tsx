@@ -43,7 +43,7 @@ const Hero = () => {
 
           <div className="absolute inset-0 flex items-center justify-center">
             <Image
-              src="/images/profile.jpg"
+              src="/images/profile.png"
               alt="Foto de Gabriel Sabino Leite"
               width={300}
               height={300}
@@ -56,5 +56,6 @@ const Hero = () => {
     </section>
   );
 };
+
 
 export default Hero;
