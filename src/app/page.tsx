@@ -1,9 +1,9 @@
 // Caminho do arquivo: src/app/page.tsx
 
-import Header from '@/components/seed-a-bit/Header';
-import Hero from '@/components/seed-a-bit/Hero'; 
-import Projects from '@/components/seed-a-bit/Projects';
-import Contact from '@/components/seed-a-bit/Contacts';
+import Header from '@/components/sections/Header';
+import Hero from '@/components/sections/Hero';
+import Projects from '@/components/sections/Projects';
+import Contact from '@/components/sections/Contacts';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer className='py-8 text-center text-gray-500 dark:text-gray-400 bg-white dark:bg-black'>
-        <p className='text-sm'>© 2025 <a className='underline' href='https://seedabit.org.br' target='_blank' rel='noopener noreferrer'>Seed a Bit</a>. All rights reserved.</p>
+        <p className='text-sm'>© 2025 Gabriel Sabino Leite. Todos os direitos reservados.</p>
       </footer>
     </div>
   );

@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: 'Meu Portifólio',
-    description: 'Portfólio de Gabriel Sabino Leite, Analista de Projetos na Seed a Bit Tecnologia e graduando em Sistemas de Informação pela UFRPE. Experiência em desenvolvimento front-end, design de sistemas, gestão de projetos e metodologias ágeis (Scrum).',
+    title: 'Gabriel Sabino Leite | Portfólio',
+    description: 'Portfólio de Gabriel Sabino Leite, Analista de Projetos e Desenvolvedor Web, graduando em Sistemas de Informação pela UFRPE. Experiência em desenvolvimento front-end, design de sistemas, gestão de projetos e metodologias ágeis (Scrum).',
     applicationName: 'Portfólio Gabriel Sabino Leite',
     authors: [{ url: 'https://www.linkedin.com/in/gabriel-sabino-leite-198a04100/', name: 'Gabriel Sabino Leite' }],
     keywords: [
-        'Gabriel Sabino Leite', 'Portfólio', 'Seed a Bit', 'React.js', 'Next.js', 'React Native',
+        'Gabriel Sabino Leite', 'Portfólio', 'React.js', 'Next.js', 'React Native',
         'HTML5', 'CSS', 'JavaScript', 'Python', 'Pandas', 'NumPy', 'Matplotlib',
         'Scrum', 'Trabalho em equipe', 'Comunicação', 'Git', 'GitHub', 'Visual Studio Code', 'Figma',
         'Gamificação', 'Design de sistemas', 'Apresentações', 'Inglês'],
@@ -35,7 +35,6 @@ export default function RootLayout({
     return (
         <html lang='pt-BR'>
             <head>
-                <link rel="preload" href="/images/seed-a-mascot.svg" as="image" />
                 <link rel="icon" type="image/png" href="/icons/favicon-96x96.png" sizes="96x96" />
                 <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
                 <link rel="shortcut icon" href="/icons/favicon.ico" />

@@ -1,4 +1,4 @@
-// Caminho: src/components/seed-a-bit/Contact.tsx
+// Caminho: src/components/sections/Contacts.tsx
 
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="px-[10%] text-center">
         <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">CONTATO</h2>
         <p className="text-gray-700 dark:text-gray-300 mb-8">
-          Vamos nos conectar!Fique à vontade para me encontrar nas redes abaixo ou enviar um e-mail.
+          Vamos nos conectar! Fique à vontade para me encontrar nas redes abaixo ou enviar um e-mail.
         </p>
         <div className="flex justify-center items-center space-x-8">
           <a

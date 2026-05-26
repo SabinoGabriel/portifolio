@@ -1,6 +1,6 @@
 {
-  "name": "Seed a Bit",
-  "short_name": "Seed a Bit",
+  "name": "Gabriel Sabino Leite | Portfólio",
+  "short_name": "GSL Portfólio",
   "icons": [
     {
       "src": "/icons/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#ec4899",
   "background_color": "#ffffff",
   "display": "standalone"
 }

@@ -1,4 +1,4 @@
-// Caminho: src/components/seed-a-bit/Projects.tsx
+// Caminho: src/components/sections/Projects.tsx
 
 type ProjectProps = {
   title: string;
@@ -7,11 +7,10 @@ type ProjectProps = {
   competencies: string[];
 };
 
-// Seus projetos já estão aqui!
 const projectsData: ProjectProps[] = [
   {
-    title: 'Landing Page "Raízes do Bem" (Seed a Bit)',
-    description: 'Desenvolvimento de uma landing page para a ONG "Raízes do Bem" como desafio final do processo seletivo da Seed a Bit.',
+    title: 'Landing Page "Raízes do Bem"',
+    description: 'Desenvolvimento de uma landing page para a ONG "Raízes do Bem" como projeto de capacitação em tecnologias web.',
     projectUrl: 'https://github.com/SabinoGabriel/landing-page-ONG-raizes-do-bem',
     competencies: ['Scrum', 'Front-end', 'Gestão de projetos']
   },
