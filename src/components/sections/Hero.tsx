@@ -1,4 +1,3 @@
-// Caminho: src/components/sections/Hero.tsx
 import Image from 'next/image';
 
 const TechIcon = ({ src, alt, position }: { src: string; alt: string; position: string }) => (
@@ -15,14 +14,9 @@ const skills = [
 const Hero = () => {
   return (
     <section id="sobre-mim" className="w-full py-20 px-4 flex flex-col md:flex-row items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-300">
-
-      {/* Coluna de Texto */}
       <div className="md:w-1/2 text-left z-10">
-        <h2 className="text-sm font-bold uppercase text-pink-500">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">
           Scrum Master | Analista de Projetos | Desenvolvedor Web
-        </h2>
-        <h1 className="text-4xl md:text-5xl font-bold mt-2 text-gray-900 dark:text-gray-100">
-          Gabriel Sabino Leite
         </h1>
 
         <div className="mt-4 space-y-3 text-base md:text-lg text-gray-600 dark:text-gray-300">
@@ -34,7 +28,6 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Skills Badges */}
         <div className="mt-5 flex flex-wrap gap-2">
           {skills.map((skill) => (
             <span
@@ -46,7 +39,6 @@ const Hero = () => {
           ))}
         </div>
 
-        {/* CTA Buttons */}
         <div className="mt-8 flex flex-col md:flex-row gap-4">
           <a href="#projetos" className="bg-pink-500 text-white font-bold py-3 px-6 rounded hover:bg-pink-600 transition-colors text-center">
             VER PROJETOS
@@ -57,7 +49,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Coluna da Imagem */}
       <div className="md:w-1/2 flex justify-center items-center mt-12 md:mt-0">
         <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
           <TechIcon src="/images/html.svg" alt="HTML5" position="top-0 left-10" />
