@@ -1,27 +1,33 @@
 'use client';
-import { useState, useEffect } from 'react';
+
+import { useEffect, useSyncExternalStore } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
+const themeChangeEvent = 'themechange';
+
+const subscribeToTheme = (onStoreChange: () => void) => {
+  window.addEventListener('storage', onStoreChange);
+  window.addEventListener(themeChangeEvent, onStoreChange);
+
+  return () => {
+    window.removeEventListener('storage', onStoreChange);
+    window.removeEventListener(themeChangeEvent, onStoreChange);
+  };
+};
+
+const getThemeSnapshot = () => localStorage.getItem('theme') === 'dark';
+const getServerSnapshot = () => false;
+
 function ThemeToggle() {
-  const [dark, setDark] = useState(false);
+  const dark = useSyncExternalStore(subscribeToTheme, getThemeSnapshot, getServerSnapshot);
 
   useEffect(() => {
-    const theme = localStorage.getItem('theme');
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-      setDark(true);
-    }
-  }, []);
+    document.documentElement.classList.toggle('dark', dark);
+  }, [dark]);
 
   function handleToggle() {
-    if (dark) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-    setDark(!dark);
+    localStorage.setItem('theme', dark ? 'light' : 'dark');
+    window.dispatchEvent(new Event(themeChangeEvent));
   }
 
   return (
