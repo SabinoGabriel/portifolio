@@ -7,25 +7,49 @@ const TechIcon = ({ src, alt, position }: { src: string; alt: string; position: 
   </div>
 );
 
+const skills = [
+  'React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3',
+  'Python', 'FastAPI', 'Node.js', 'SQL / SQLite', 'Git', 'GitHub', 'Figma', 'Scrum',
+];
+
 const Hero = () => {
   return (
     <section id="sobre-mim" className="w-full py-20 px-4 flex flex-col md:flex-row items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-300">
 
       {/* Coluna de Texto */}
-      <div className="md:w-1/2 text-center md:text-left z-10">
+      <div className="md:w-1/2 text-left z-10">
         <h2 className="text-sm font-bold uppercase text-pink-500">
-          Analista de Projetos | Desenvolvedor Web
+          Scrum Master | Analista de Projetos | Desenvolvedor Web
         </h2>
         <h1 className="text-4xl md:text-5xl font-bold mt-2 text-gray-900 dark:text-gray-100">
           Gabriel Sabino Leite
         </h1>
-        {/* O container do parágrafo agora permite que o texto cresça livremente */}
-        <p className="mt-4 text-base md:text-lg text-gray-600 dark:text-gray-300">
-          Sou Analista de Projetos e Desenvolvedor Web, graduando em Sistemas de Informação pela UFRPE. Tenho experiência em desenvolvimento front-end, design de sistemas, gestão de projetos e metodologias ágeis (Scrum). Atuo com tecnologias como React.js, Next.js, HTML, CSS, Python e ferramentas de versionamento como Git e GitHub. Participo ativamente de eventos e comunidades de tecnologia, buscando sempre inovar e entregar soluções de impacto.
-        </p>
-        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+
+        <div className="mt-4 space-y-3 text-base md:text-lg text-gray-600 dark:text-gray-300">
+          <p>
+            Graduando em Sistemas de Informação pela UFRPE com atuação prática como Scrum Master e Analista de Projetos na Seed a Bit Tecnologia. Experiente na facilitação de times ágeis, mapeamento de processos e no desenvolvimento de soluções que unem front-end responsivo a arquiteturas eficientes de back-end.
+          </p>
+          <p>
+            Apaixonado por usar a lógica estruturada para resolver problemas reais e gerar impacto contínuo.
+          </p>
+        </div>
+
+        {/* Skills Badges */}
+        <div className="mt-5 flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className="bg-pink-50 dark:bg-pink-900/20 text-pink-600 dark:text-pink-300 text-xs font-semibold px-3 py-1 rounded-full border border-pink-200 dark:border-pink-800"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="mt-8 flex flex-col md:flex-row gap-4">
           <a href="#projetos" className="bg-pink-500 text-white font-bold py-3 px-6 rounded hover:bg-pink-600 transition-colors text-center">
-            PROJETOS
+            VER PROJETOS
           </a>
           <a href="https://www.linkedin.com/in/gabriel-sabino-leite-198a04100/" target="_blank" rel="noopener noreferrer" className="bg-gray-700 text-white font-bold py-3 px-6 rounded hover:bg-gray-800 transition-colors text-center">
             LINKEDIN
@@ -56,6 +80,5 @@ const Hero = () => {
     </section>
   );
 };
-
 
 export default Hero;

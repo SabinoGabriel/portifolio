@@ -1,10 +1,10 @@
-# Gabriel Sabino Leite | Portfólio
+# Gabriel Sabino Leite | Portfolio
 
 [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](./README.pt-br.md)
 
-Portfólio pessoal desenvolvido com **Next.js**, **React**, **TypeScript** e **Tailwind CSS**, apresentando meus projetos, habilidades e formas de contato.
+Personal portfolio built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**, showcasing my projects, skills, and contact information.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Next.js** 15.1.7
 - **React** ^19
@@ -12,53 +12,53 @@ Portfólio pessoal desenvolvido com **Next.js**, **React**, **TypeScript** e **T
 - **TailwindCSS** ^3.4.17
 - **ESLint** ^9
 
-## 📦 Como Rodar Localmente
+## Running Locally
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
 git clone https://github.com/SabinoGabriel/portifolio.git
 ```
 
-Navegue até o diretório do projeto:
+Navigate to the project directory:
 
 ```bash
 cd portifolio
 ```
 
-Instale as dependências:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Inicie o servidor de desenvolvimento:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🗂️ Estrutura do Projeto
+## Project Structure
 
 ```
 src/
 ├── app/
-│   ├── layout.tsx       # Layout raiz com metadados SEO
-│   ├── page.tsx         # Página principal
-│   └── globals.css      # Estilos globais
+│   ├── layout.tsx       # Root layout with SEO metadata
+│   ├── page.tsx         # Main page
+│   └── globals.css      # Global styles
 ├── components/
-│   └── sections/        # Seções da página (Header, Hero, Projects, Contacts)
-└── utils/               # Funções utilitárias
+│   └── sections/        # Page sections (Header, Hero, Projects, Contacts)
+└── utils/               # Utility functions
 ```
 
-## 📬 Contato
+## Contact
 
 - **LinkedIn**: [gabriel-sabino-leite](https://www.linkedin.com/in/gabriel-sabino-leite-198a04100/)
 - **GitHub**: [SabinoGabriel](https://github.com/SabinoGabriel)
-- **E-mail**: gabrielsabinopinho@gmail.com
+- **Email**: gabrielsabinopinho@gmail.com
 
-## 📄 Licença
+## License
 
-Este projeto está licenciado sob os termos descritos no arquivo [LICENSE](LICENSE).
+This project is licensed under the terms described in the [LICENSE](LICENSE) file.

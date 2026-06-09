@@ -14,7 +14,6 @@ const Header = () => {
         {/* Logo / Nome */}
         <div>
           <h1 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100">Gabriel Sabino Leite</h1>
-          <p className="text-xs md:text-sm text-gray-700 dark:text-gray-300">Analista de Projetos | Desenvolvedor Web</p>
         </div>
 
         {/* Navegação Desktop */}

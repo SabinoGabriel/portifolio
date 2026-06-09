@@ -9,22 +9,22 @@ type ProjectProps = {
 
 const projectsData: ProjectProps[] = [
   {
-    title: 'Landing Page "Raízes do Bem"',
-    description: 'Desenvolvimento de uma landing page para a ONG "Raízes do Bem" como projeto de capacitação em tecnologias web.',
-    projectUrl: 'https://github.com/SabinoGabriel/landing-page-ONG-raizes-do-bem',
-    competencies: ['Scrum', 'Front-end', 'Gestão de projetos']
-  },
-  {
-    title: 'Gerenciador de Pensamentos com Gamificação (UFRPE)',
-    description: 'Sistema em Python com arquitetura modular e gamificação para gerenciar pensamentos diários.',
-    projectUrl: 'https://github.com/SabinoGabriel/pisi1',
-    competencies: ['Python', 'Gamificação', 'Design de sistemas']
+    title: 'Sistema Web Psicólogos no Nordeste',
+    description: 'Desenvolvimento do front-end de uma plataforma web completa para agendamento de consultas psicológicas gratuitas. Focado em alta performance, responsividade e consumo de APIs utilizando React, Next.js e TypeScript.',
+    projectUrl: 'https://github.com/SabinoGabriel',
+    competencies: ['React.js', 'Next.js', 'TypeScript', 'APIs'],
   },
   {
     title: 'Projeto Final Data Science PRO (Infinity School)',
-    description: 'Pipeline completo de análise e modelagem preditiva utilizando Pandas, NumPy e Machine Learning.',
+    description: 'Pipeline completo de análise de dados e modelagem preditiva utilizando Python, Pandas, NumPy, bibliotecas gráficas e Machine Learning. 🏆 1º lugar no ranking de alunos.',
     projectUrl: 'https://github.com/SabinoGabriel/infinity_projetos',
-    competencies: ['Python', 'Pandas', 'Análise de dados']
+    competencies: ['Python', 'Pandas', 'Análise de dados'],
+  },
+  {
+    title: 'Gerenciador de Pensamentos com Gamificação (UFRPE)',
+    description: 'Sistema desenvolvido em Python com foco em arquitetura modular, lógica estruturada e aplicação de conceitos de gamificação para gerenciar pensamentos diários.',
+    projectUrl: 'https://github.com/SabinoGabriel/pisi1',
+    competencies: ['Python', 'Gamificação', 'Design de sistemas'],
   },
 ];
 

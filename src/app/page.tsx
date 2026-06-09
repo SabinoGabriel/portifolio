@@ -15,7 +15,7 @@ export default function Home() {
         <Contact />
       </main>
       <footer className='py-8 text-center text-gray-500 dark:text-gray-400 bg-white dark:bg-black'>
-        <p className='text-sm'>© 2025 Gabriel Sabino Leite. Todos os direitos reservados.</p>
+        <p className='text-sm'>© 2026 Gabriel Sabino Leite. Todos os direitos reservados.</p>
       </footer>
     </div>
   );
